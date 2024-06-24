@@ -1,0 +1,496 @@
+*{
+    color: var(--cor-de-fonte);
+    font-family: "Raleway", sans-serif;
+    background-color: var(--cor-de-fundo);
+
+}
+
+:root{
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fonte: #464646;
+    --cor-secundaria: #d0e7ec;
+    --cor-terciaria: #2A7AE4;
+    --cor-alerta:#e63636;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+/*customizando os textos com links*/
+
+body{
+    padding: 2% 2% 2% 2%;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/*Parte do meu de navegação*/
+header{
+    display: flex;
+    /*margin-left: 100px;*/
+
+}
+
+.menu__div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-left: 50px;
+    
+}
+
+.menu__list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 22px;
+    gap: 10px;
+    font-size: 18px;
+
+}
+
+.menu__list__item{
+    display: list-item;
+}
+
+.menu__list__item__contato{
+    display: none;
+}
+
+/*Sessão APRESENTAÇÃO*/
+
+.title{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 50px;
+
+}
+
+.title__profile{
+    object-fit: none;
+    margin-top: 2px;
+    margin-right: 50px;
+}
+
+.title__apresentacao{
+    font-size: 52px;
+    margin-left: -50px;
+
+}
+
+.title__descricao{
+    font-size: 22px;
+    margin-left: -50px;
+
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title__network{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -90px;
+    /*list-style: none;*/
+    gap: 30px;
+
+}
+
+.title__network__item{
+    font-size: 0;
+}
+    
+
+/*Sessão SOBRE MIM*/
+
+.about{
+    display: flex;
+    padding: 25px 400px 50px 100px;
+    background-color: var(--cor-secundaria);
+    margin-left: -50px;
+    margin-right: -30px;
+    
+}
+
+
+.about__container{
+    background-color: var(--cor-secundaria);
+
+}
+
+.about__title{
+    font-size: 32px;
+    background-color: var(--cor-secundaria);
+}
+
+.about__title_p1{
+    font-size: 20px;
+    background-color: var(--cor-secundaria);
+}
+
+/*Sessão SKILLS */
+
+.skills{
+    display: flex;
+    justify-content: center;
+    padding: 25px 400px 30px 70px;
+    flex-direction: column;
+
+
+}
+
+.skills__title{
+    display: flex;
+    font-size: 32px;
+    margin-left: 500px;
+}
+
+.skills__line{
+    display: flex;
+    font-size: 0;
+    margin-left: 90px;
+    
+}
+
+/*Sessão HOBBIES */
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    padding: 20px 400px 50px 70px;
+    flex-direction: column;
+
+
+}
+
+.hobbies__title{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    margin-left: 340px;
+}
+
+.hobbies__line{
+    display: flex;
+    font-size: 0;
+    margin-left: 90px;
+}
+
+/*Sessão FORMAÇÃO */
+
+.academic{
+    display: flex;
+    justify-content: center;
+    padding: 20px 400px 50px 95px;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+    margin-left: -30px;
+    margin-right: -30px;
+    
+}
+
+.academic___title{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    margin-left: 310px;
+    background-color: var(--cor-secundaria);
+}
+
+.academic__courses{
+    display: flex;
+    margin-left: 120px;
+    background-color: var(--cor-secundaria);
+}
+
+
+.academic__courses__list{
+    background-color: var(--cor-secundaria);
+    list-style: none;
+    flex-direction: column;
+}
+
+.academic__courses__box{
+    background-color: var(--cor-secundaria);
+}
+
+.academic__courses__item__img{
+    background-color: var(--cor-secundaria);
+}
+
+.academic__courses__item__title{
+    background-color: var(--cor-secundaria);
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: -10px;
+    
+    
+}
+
+.academic__courses__item__subtitle{
+    background-color: var(--cor-secundaria);
+    font-size: 16px;
+}
+
+/*Sessão EXPERIÊNCIA */
+
+.experience{
+    display: flex;
+    justify-content: center;
+    padding: 20px 400px 50px 100px;
+    flex-direction: column;
+}
+
+.experience__section__title{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    margin-left: 300px;
+    
+}
+
+.experience__box{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-left: 250px;
+
+}
+
+.experience__title{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.experience__text{
+    font-size: 16px;
+    margin-bottom: 10px;
+    /*margin-top: 5px;*/
+
+}
+
+.experience__description{
+    display: flex;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.experience__botao--repo{
+    /*background: var(--cor-botoes);*/
+    border: 1px solid var(--cor-terciaria);
+    cursor: pointer;
+    padding: 17px 19px;
+    /*height: 55px;
+    width: 110px;*/
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    text-align: center;
+    display: inline-block; 
+    transition-duration: 0.4s; /* Duração da transição */
+
+}
+
+.experience__botao--demo{
+    border: 1px solid var(--cor-terciaria);
+    cursor: pointer;
+    padding: 17px 19px;
+    /*height: 55px;
+    width: 110px;*/
+    font-size: 16px;
+    color: var(--cor-terciaria);
+    text-align: center;
+    display: inline-block; 
+    transition-duration: 0.4s; /* Duração da transição */
+
+}
+.experience__botao--repo:hover,
+.experience__botao--demo:hover {
+    background-color: var(--cor-terciaria); /* Cor do botão quando passar o cursor */
+    color: white;
+}
+
+/*Sessão entre em contato comigo*/
+
+.formcontato{
+    display: flex;
+    justify-content: center;
+    padding: 100px 400px 50px 100px;
+    flex-direction: column;
+    background-color: var(--cor-secundaria);
+    margin-left: -30px;
+    margin-right: -30px;
+    
+}
+
+.formcontato__contacto{
+    display: flex;
+    gap: 15px;
+    background-color: var(--cor-secundaria);
+}
+
+.formcontato__text{
+    background-color: var(--cor-secundaria);
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.formcontato__form{
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /*position: relative;*/
+}
+
+/*tags dos textos do formulario*/
+
+.formcontato__img{
+    display: flex;
+    background-color: var(--cor-secundaria);
+
+}
+
+.formcontato__title{
+    display: flex;
+    background-color: var(--cor-secundaria);
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.formcontato__subtext1{
+    display: flex;
+    background-color: var(--cor-secundaria);
+    font-size: 16px;
+    margin-bottom: -15px;
+    
+}
+
+.formcontato__subtext2{
+    display: flex;
+    background-color: var(--cor-secundaria);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/*tags dos espaços do formulario*/
+
+.formcontato__group{
+    background-color: var(--cor-secundaria);
+    position: relative;
+    
+}
+
+.formcontato__input{
+    border: 0px;
+    border-radius: 3px;
+    height: 50px;
+    width: 600px;
+    font-size: 16px;
+    padding-left: 5px;
+    /*border-bottom: 2px solid var(--cor-botoes);*/
+    outline: 0;
+    
+}
+
+.formcontato__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+    pointer-events: none;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-top: 17px;
+    background-color: transparent;
+    
+}
+
+.span-required{
+    display: none;
+    font-size: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-alerta);
+    margin-bottom: -24px;
+    
+}
+
+.spans-required{
+    display: none;
+    font-size: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-alerta);
+    margin-top: -30px;
+    margin-bottom: -8px;
+    
+}
+
+.formcontato__input:focus + .formcontato__label,
+.formcontato__input:not(:placeholder-shown) + .formcontato__label {
+    top: -15px;
+    font-size: 12px;
+    color: var(--cor-terciaria);
+}
+
+.formcontato__input:focus, .formcontato__textarea:focus{
+    border-bottom: 2px solid var(--cor-terciaria);
+}
+
+.formcontato__textarea{
+    border: 0px;
+    border-radius: 8px;
+    height: 136px;
+    width: 600px;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 10px;
+    resize: none; /*não deixa o usuario mudar o tamanho da caixa de texto*/
+    outline: 0;
+}
+
+/*Botão De ENVIAR*/
+
+.formcontato__botao{
+    display: flex;
+    margin-right: 500px;
+    border: 1px solid var(--cor-terciaria);
+    cursor: pointer;
+    padding: 17px 19px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-weight: bold;
+
+    
+
+}
+
+/*Sessão RODAPÉ*/
+
+.footer__rodape{
+    display: flex;
+    padding: 7px 100px 0px 100px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: -30px;
+}
+
+.footer__ano{
+    margin-top: -7px;
+}
+
+}

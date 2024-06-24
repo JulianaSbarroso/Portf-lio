@@ -1,0 +1,491 @@
+*{
+    color: var(--cor-de-fonte);
+    font-family: "Raleway", sans-serif;
+    background-color: var(--cor-de-fundo);
+
+}
+
+:root{
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fonte: #464646;
+    --cor-secundaria: #d0e7ec;
+    --cor-terciaria: #2A7AE4;
+
+}
+
+@media screen and (max-width: 768px) {
+
+body{
+    padding: 2% 2% 2% 2%;
+
+}
+
+header{
+    display: flex;
+    font-size: 25px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+/*ÁREA DO HEADER*/
+
+.menu__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 40px;
+
+}
+
+.menu__list__item{
+    display: none;
+}
+
+.menu__list__item__contato{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    width: 18%;
+    right: 0;
+    position: absolute;
+    padding-top: 1.5%;
+    font-weight: bold;
+    margin-top: -10px;
+
+}
+
+/*Sessão APRESENTAÇÃO*/
+
+.title{
+    display: flex;
+    margin-left: 0px;
+    margin-right: -100px;
+
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title__profile{
+    object-fit: none;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-right: 100px;
+
+}
+
+.title__apresentacao{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.title__descricao{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.title__network{
+    margin-left: -40px;
+    gap: 70px;
+    /*grid-template-columns: 1fr 1fr;*/
+    display: flex;
+
+}
+
+.title__network__item{
+    font-size: 0;
+}
+
+/*Sessão SOBRE MIM*/
+
+.about{
+    margin-top: 2%;
+    margin-left: -10%;
+    margin-right: -10%;
+    background-color: var(--cor-secundaria);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.about__container{
+    background-color: var(--cor-secundaria);
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+}
+
+.about__title{
+    font-size: 32px;
+    font-weight: bold;
+    background-color: var(--cor-secundaria);
+}
+
+.about__title_p1{
+    background-color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+/*Sessão SKILLS*/
+
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-left: 7px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills__line{
+    display: flex;
+    font-size: 0;
+    margin-left: -3%;
+    margin-right: -10px;
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    gap: 10px;
+    column-gap: 0px;
+
+}
+
+/*Sessão HOBBIES*/
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hobbies__title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-left: 7px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.hobbies__line{
+    display: flex;
+    font-size: 0;
+    margin-left: -3%;
+    margin-right: -10px;
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    gap: 10px;
+    column-gap: 1px;
+}
+
+/*Sessão FORMAÇÃO */
+
+.academic{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: -15%;
+    margin-right: -10%;
+    background-color: var(--cor-secundaria);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.academic__courses{
+    display: flex;
+    grid-template-columns: auto auto;
+    background-color: var(--cor-secundaria);
+}
+
+.academic___title{
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    width: 100%;
+    text-align: right;
+    margin-left: 0px;
+    margin-top: 40px;
+    background-color: var(--cor-secundaria);
+
+}
+
+.academic__courses__box{
+    background-color: var(--cor-secundaria);
+}
+
+.academic__courses__list{
+    list-style: none;
+    flex-direction: column;
+    margin-left: 0px;
+    background-color: var(--cor-secundaria);
+}
+
+.academic__courses__item__img{
+    /*width: 240px;
+    height: 230px;*/
+    background-color: var(--cor-secundaria);
+}
+
+.academic__courses__item__title, .academic__courses__item__subtitle, .academic__courses{
+    background-color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+/*Sessão de EXPERIÊNCIAS*/
+
+.experience{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience__section__title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    width: 100%;
+    /*padding-left: 20px;*/
+    margin-top: 50px;
+}
+
+.experience__title{
+    margin-top: 15px;
+}
+
+.experience__text{
+    margin-top: -10px;
+}
+
+.experience__description{
+    margin-bottom: 40px;
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.experience__botao--repo{
+    /*background: var(--cor-botoes);*/
+    border: 1px solid var(--cor-terciaria);
+    padding: 17px 19px;
+    font-size: 20px;
+    color: var(--cor-terciaria);
+    text-align: center;
+    display: inline-block;
+    font-weight: bold; 
+    /*transition-duration: 0.4s; /* Duração da transição */
+
+}
+
+.experience__botao--demo{
+    border: 1px solid var(--cor-terciaria);
+    /*cursor: pointer;*/
+    padding: 17px 19px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    background-color: var(--cor-terciaria);
+    font-weight: bold;
+    /*transition-duration: 0.4s; /* Duração da transição */
+
+}
+
+/*Sessão entre em contato comigo*/
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-left: -10%;
+    margin-right: -10%;
+    margin-bottom: -10px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--cor-secundaria);
+}
+
+.formcontato__img{
+    display: none;
+}
+
+.formcontato__title{
+    font-size: 32px;
+    background-color: var(--cor-secundaria);
+    padding-left: 100px;
+}
+
+.formcontato__subtext1{
+    display: flex;
+    font-size: 20px;
+    margin-top: -15px;
+    background-color: var(--cor-secundaria);
+    padding-left: 100px;
+}
+
+.formcontato__subtext2{
+    display: flex;
+    font-size: 20px;
+    margin-top: -11px;
+    background-color: var(--cor-secundaria);
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.formcontato__group{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formcontato__form{
+    background-color: var(--cor-secundaria);
+    padding-left: 100px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*tags dos espaços do formulario*/
+
+
+.formcontato__group{
+    background-color: var(--cor-secundaria);
+    position: relative;
+     
+}
+
+.formcontato__input{
+    border: 0px;
+    border-radius: 8px;
+    height: 50px;
+    width: 860px;
+    font-size: 20px;
+    padding-left: 20px;
+    /*border-bottom: 2px solid var(--cor-botoes);*/
+    outline: 0;
+    
+}
+
+.formcontato__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+    pointer-events: none;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-top: 15px;
+    background-color: transparent;
+    
+}
+
+.span-required{
+    display: none;
+    font-size: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-alerta);
+    margin-bottom: -24px;
+    
+}
+
+.spans-required{
+    display: none;
+    font-size: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-alerta);
+    margin-top: -30px;
+    margin-bottom: -8px;
+    
+}
+
+
+
+.formcontato__input:focus + .formcontato__label,
+.formcontato__input:not(:placeholder-shown) + .formcontato__label {
+    top: -15px;
+    font-size: 20px;
+    color: var(--cor-terciaria);
+}
+
+.formcontato__input:focus, .formcontato__textarea:focus{
+    border-bottom: 2px solid var(--cor-terciaria);
+}
+
+.formcontato__textarea{
+    border: 0px;
+    border-radius: 8px;
+    height: 136px;
+    width: 865px;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 10px;
+    resize: none; /*não deixa o usuario mudar o tamanho da caixa de texto*/
+    outline: 0;
+}
+
+/*Botão De ENVIAR*/
+
+.formcontato__botao{
+    display: flex;
+    margin-top: 30px;
+    border: 1px solid var(--cor-terciaria);
+    cursor: pointer;
+    padding: 18px 26px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    height: 65px;
+    width: 230px;
+    font-weight: bold;
+
+}
+
+/*Sessão RODAPÉ*/
+
+.footer__rodape{
+    display: flex;
+    /*padding: 7px 100px 0px 100px;*/
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.footer__ano{
+    margin-top: -7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
